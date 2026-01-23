@@ -14,7 +14,7 @@ services:
     run:
       - composer install
   database:
-    type: mysql:8.0
+    type: mysql
     creds:
       user: drupal
       password: drupal
