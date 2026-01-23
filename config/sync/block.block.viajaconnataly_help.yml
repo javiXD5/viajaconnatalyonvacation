@@ -1,0 +1,22 @@
+uuid: be6c975c-1131-4178-ab6b-051f84cedc6f
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - viajaconnataly
+_core:
+  default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
+id: viajaconnataly_help
+theme: viajaconnataly
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

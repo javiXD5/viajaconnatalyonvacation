@@ -1,0 +1,22 @@
+uuid: 4525949d-9377-4b53-a138-a44fb7c60f28
+langcode: es
+status: true
+dependencies:
+  theme:
+    - viajaconnataly
+_core:
+  default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
+id: viajaconnataly_primary_local_tasks
+theme: viajaconnataly
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

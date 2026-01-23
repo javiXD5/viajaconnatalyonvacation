@@ -1,0 +1,22 @@
+uuid: 9be03dab-170c-44dd-b352-1dc84c58033a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - viajaconnataly
+_core:
+  default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
+id: viajaconnataly_messages
+theme: viajaconnataly
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

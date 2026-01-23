@@ -1,0 +1,22 @@
+uuid: f734d945-09ed-4117-a265-6b505a357060
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - viajaconnataly
+_core:
+  default_config_hash: NjcxOBrPOiK5-38t56DwFBDVY4yer7YSlbRWXFuHe7A
+id: viajaconnataly_breadcrumbs
+theme: viajaconnataly
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility: {  }

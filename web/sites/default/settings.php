@@ -908,3 +908,16 @@ $settings['hash_salt'] = 'viajaconnatalyonvacation-local-salt';
 $settings['file_private_path'] = '../private';
 
 $settings['config_sync_directory'] = '../config/sync';
+/**
+ * Reverse proxy settings (Lando).
+ */
+$settings['reverse_proxy'] = TRUE;
+$settings['reverse_proxy_addresses'] = ['127.0.0.1'];
+
+/**
+ * Trusted host patterns.
+ */
+$settings['trusted_host_patterns'] = [
+  '^viajaconnatalyonvacation\.lndo\.site$',
+  '^localhost$',
+];

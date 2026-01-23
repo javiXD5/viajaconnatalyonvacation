@@ -1,0 +1,20 @@
+uuid: 2c72fd8e-2689-492c-a41e-623dbd38c1d8
+langcode: es
+status: true
+dependencies:
+  theme:
+    - viajaconnataly
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: viajaconnataly_local_actions
+theme: viajaconnataly
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

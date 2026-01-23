@@ -1,0 +1,20 @@
+uuid: ea5f513e-be26-4cc6-b9d2-bf18476e747e
+langcode: es
+status: true
+dependencies:
+  theme:
+    - viajaconnataly
+_core:
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: viajaconnataly_page_title
+theme: viajaconnataly
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }
