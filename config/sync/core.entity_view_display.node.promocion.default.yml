@@ -1,0 +1,39 @@
+uuid: 96483538-abf5-4432-aa7f-0fb92be2305d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.promocion.body
+    - field.field.node.promocion.field_imagen
+    - node.type.promocion
+  module:
+    - text
+    - user
+id: node.promocion.default
+targetEntityType: node
+bundle: promocion
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_imagen:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

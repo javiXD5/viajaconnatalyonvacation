@@ -1,15 +1,15 @@
-uuid: ea5f513e-be26-4cc6-b9d2-bf18476e747e
+uuid: 9dc501b2-30ca-4206-aca0-bf55cbb644ce
 langcode: es
 status: true
 dependencies:
   theme:
-    - viajaconnataly
+    - bootstrap5
 _core:
-  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
-id: viajaconnataly_page_title
-theme: viajaconnataly
-region: header
-weight: -30
+  default_config_hash: qYppfxaWSy6BwGNKdMch1PeUA24PlRTt39jQft6A6Kg
+id: bootstrap5_page_title
+theme: bootstrap5
+region: content
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

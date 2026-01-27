@@ -1,0 +1,11 @@
+uuid: 5d2d9575-c51c-4ade-9f2c-eebe889aaebd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hoteles
+id: taxonomy_term.hoteles
+target_entity_type_id: taxonomy_term
+target_bundle: hoteles
+default_langcode: site_default
+language_alterable: false

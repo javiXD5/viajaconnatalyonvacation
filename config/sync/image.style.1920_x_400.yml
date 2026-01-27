@@ -1,0 +1,15 @@
+uuid: ee95363f-a9a2-4808-87cf-bbe69851daf8
+langcode: es
+status: true
+dependencies: {  }
+name: 1920_x_400
+label: '1920 x 400'
+effects:
+  844ecfc2-7b10-4489-8711-e3e7c1944a3c:
+    uuid: 844ecfc2-7b10-4489-8711-e3e7c1944a3c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 400
+      anchor: center-center

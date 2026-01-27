@@ -1,0 +1,42 @@
+uuid: 2acf4135-a779-4a02-a12b-fd2372c4f5df
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.image_entity_browser_multimedia
+  module:
+    - views
+name: imagen
+label: Imagen
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Seleccione entidades'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7487a7af-a109-432a-915e-df36e826f078:
+    id: media_image_upload
+    uuid: 7487a7af-a109-432a-915e-df36e826f078
+    label: 'Añadir una nueva'
+    weight: -9
+    settings:
+      submit_text: 'Seleccionar los archivos'
+      upload_location: 'public://'
+      multiple: true
+      extensions: 'jpg jpeg png gif webp'
+      media_type: image
+  3e6a09d9-8ff6-4268-805f-81756042b10b:
+    id: view
+    uuid: 3e6a09d9-8ff6-4268-805f-81756042b10b
+    label: Existentes
+    weight: -10
+    settings:
+      submit_text: 'Seleccione entidades'
+      auto_select: false
+      view: image_entity_browser_multimedia
+      view_display: entity_browser_1

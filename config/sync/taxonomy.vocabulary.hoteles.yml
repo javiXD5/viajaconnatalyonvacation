@@ -1,0 +1,9 @@
+uuid: 0f12a50b-5c72-48af-b4e3-3d07b7f6e19f
+langcode: es
+status: true
+dependencies: {  }
+name: Hoteles
+vid: hoteles
+description: null
+weight: 0
+new_revision: false

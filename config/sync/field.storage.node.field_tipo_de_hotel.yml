@@ -1,0 +1,20 @@
+uuid: a1013912-b73c-4b84-9b45-09a8cf367d08
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tipo_de_hotel
+field_name: field_tipo_de_hotel
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

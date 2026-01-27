@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_tipo_de_hotel
     - image.style.wide
     - node.type.article
   module:
@@ -56,6 +57,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 10
+    region: content
+  field_tipo_de_hotel:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
     region: content
   links:
     settings: {  }

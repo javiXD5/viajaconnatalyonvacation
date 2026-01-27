@@ -1,0 +1,24 @@
+uuid: a56e6004-214f-4c7c-a40e-3db259059ac6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.promocion
+  module:
+    - text
+id: node.promocion.body
+field_name: body
+entity_type: node
+bundle: promocion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
