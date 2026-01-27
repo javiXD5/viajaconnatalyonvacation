@@ -2,3 +2,5 @@
 /web/sites/*/files/
 /web/sites/*/settings.local.php
 /.vscode/
+*.sql.gz
+*.sql
