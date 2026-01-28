@@ -1,0 +1,12 @@
+uuid: 4a74de7a-d971-4320-95e5-dc3b060cd807
+langcode: es
+status: true
+dependencies: {  }
+id: node__promocion
+label: 'Contenido: Promocion'
+tags:
+  description: "[node:body:summary]\r\n"
+  og_description: "[node:body:summary]\r\n"
+  og_image: '[node:field_image]'
+  og_title: '[node:title]'
+  title: '[node:title]'

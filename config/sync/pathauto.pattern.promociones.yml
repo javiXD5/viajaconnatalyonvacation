@@ -1,0 +1,22 @@
+uuid: 50e9c871-a088-4d15-8ead-9ef33dfd8ec1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: promociones
+label: Promociones
+type: 'canonical_entities:node'
+pattern: 'viajes/[node:title]'
+selection_criteria:
+  bac1bbe3-1235-48ce-b9b6-231cffe56aab:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bac1bbe3-1235-48ce-b9b6-231cffe56aab
+    context_mapping:
+      node: node
+    bundles:
+      promocion: promocion
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: 22caece3-dc45-477d-9fe6-d49728edc627
+langcode: es
+status: true
+dependencies:
+  module:
+    - metatag
+    - node
+id: node.field_metaetiquetas
+field_name: field_metaetiquetas
+entity_type: node
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

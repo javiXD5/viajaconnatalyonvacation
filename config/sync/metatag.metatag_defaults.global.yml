@@ -1,0 +1,14 @@
+uuid: fc9f2c96-32a2-445b-bb37-1084945a55b5
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  description: "Descubre promociones y paquetes de viaje increíbles. Planea tu próximo destino y contáctanos fácilmente por WhatsApp.\r\n"
+  og_description: "Promociones de viajes, destinos y experiencias únicas. Escríbenos por WhatsApp y planea tu próximo viaje.\r\n"
+  og_title: '[site:name] | Viajes y promociones'
+  title: '[site:name] | Viajes y experiencias inolvidables'
