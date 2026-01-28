@@ -921,3 +921,4 @@ $settings['trusted_host_patterns'] = [
   '^viajaconnatalyonvacation\.lndo\.site$',
   '^localhost$',
 ];
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
