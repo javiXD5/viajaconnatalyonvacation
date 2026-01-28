@@ -1,0 +1,25 @@
+uuid: 403460ca-0465-4d66-beba-10941adeb424
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - viajaconnataly
+id: viajaconnataly_navegacionprincipal
+theme: viajaconnataly
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
