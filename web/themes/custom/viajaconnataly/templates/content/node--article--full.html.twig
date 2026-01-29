@@ -1,0 +1,23 @@
+<article{{ attributes.addClass('hotel') }}>
+  <h1>{{ label }}</h1>
+
+  {% if content.field_gallery %}
+    <div class="hotel-gallery">
+      {{ content.field_gallery }}
+    </div>
+  {% endif %}
+  {% if content.field_image %}
+    <div class="hotel-image img-fluid">
+      {{ content.field_image}}
+    </div>
+  {% endif %}
+  <div class="hotel-body">
+    {{ content.body }}
+  </div>
+
+  <div class="hotel-cta">
+    <a href="https://wa.me/57XXXXXXXXX" class="btn btn-success">
+      Reservar por WhatsApp
+    </a>
+  </div>
+</article>
