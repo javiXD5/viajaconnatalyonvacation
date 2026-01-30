@@ -1,0 +1,20 @@
+<article{{ attributes.addClass('promocion') }}>
+  
+  <h1>{{ label }}</h1>
+  {% if content.field_media_image %}
+    <div class="promocion-image">
+      {{ content.field_media_image }}
+    </div>
+  {% endif %}
+
+  <div class="promocion-body">
+    {{ content.body }}
+  </div>
+
+  <div class="promocion-cta">
+    <a href="https://wa.me/57XXXXXXXXX" class="btn btn-success">
+      Reservar por WhatsApp
+    </a>
+  </div>
+
+</article>
