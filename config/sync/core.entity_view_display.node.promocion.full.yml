@@ -1,15 +1,12 @@
-uuid: 559732a8-266a-4be0-b6a1-e4f88641f0e2
-langcode: en
+uuid: 603d0e7c-bc3c-4668-aac5-11366f01d2db
+langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - field.field.node.article.field_tipo_de_hotel
-    - node.type.article
+    - field.field.node.promocion.body
+    - field.field.node.promocion.field_image
+    - node.type.promocion
   module:
     - layout_builder
     - text
@@ -18,11 +15,9 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-_core:
-  default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
-id: node.article.full
+id: node.promocion.full
 targetEntityType: node
-bundle: article
+bundle: promocion
 mode: full
 content:
   body:
@@ -42,8 +37,5 @@ content:
     weight: 0
     region: content
 hidden:
-  comment: true
-  field_tags: true
-  field_tipo_de_hotel: true
   langcode: true
   links: true

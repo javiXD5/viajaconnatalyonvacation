@@ -5,10 +5,10 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_image
-    - image.style.medium
+    - image.style.large
     - node.type.article
   module:
-    - image
+    - media
     - node
     - text
     - user
@@ -204,13 +204,13 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: media_thumbnail
           settings:
             image_link: ''
-            image_style: medium
+            image_style: large
             image_loading:
               attribute: lazy
-          group_column: ''
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0

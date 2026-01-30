@@ -3,9 +3,11 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_imagen
+    - field.storage.node.field_image
+    - image.style.1920_x_400
     - node.type.promocion
   module:
+    - media
     - node
     - user
     - views_bootstrap
@@ -78,10 +80,10 @@ display:
           text: vista
           output_url_as_text: true
           absolute: false
-        field_imagen:
-          id: field_imagen
-          table: node__field_imagen
-          field: field_imagen
+        field_image_1:
+          id: field_image_1
+          table: node__field_image
+          field: field_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -89,8 +91,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: '<a href="{{ view_node }}">{{ field_imagen }}</a>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -128,9 +130,12 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: carousel
+            image_link: ''
+            image_style: 1920_x_400
+            image_loading:
+              attribute: lazy
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -216,7 +221,7 @@ display:
           use_caption: 1
           wrap: 1
           effect: ''
-          image: field_imagen
+          image: field_image_1
           title: ''
           description: ''
       row:
@@ -254,7 +259,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_imagen'
+        - 'config:field.storage.node.field_image'
   block_1:
     id: block_1
     display_title: Block
@@ -270,4 +275,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_imagen'
+        - 'config:field.storage.node.field_image'

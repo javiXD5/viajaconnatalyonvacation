@@ -1,16 +1,16 @@
-uuid: 94e07925-9a1a-4ba4-a3e6-bbfec85bc505
+uuid: 3140601e-1a51-4b75-a190-892eb7f48b43
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_imagen
+    - field.storage.node.field_image
     - media.type.image
     - node.type.promocion
-id: node.promocion.field_imagen
-field_name: field_imagen
+id: node.promocion.field_image
+field_name: field_image
 entity_type: node
 bundle: promocion
-label: Imagen
+label: Image
 description: ''
 required: false
 translatable: false
@@ -22,7 +22,7 @@ settings:
     target_bundles:
       image: image
     sort:
-      field: thumbnail.alt
+      field: _none
       direction: ASC
     auto_create: false
     auto_create_bundle: ''

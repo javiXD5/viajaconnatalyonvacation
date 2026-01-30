@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.promocion.body
-    - field.field.node.promocion.field_imagen
+    - field.field.node.promocion.field_image
     - node.type.promocion
   module:
     - text
@@ -21,14 +21,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_imagen:
+  field_image:
     type: entity_reference_entity_view
-    label: above
+    label: visually_hidden
     settings:
-      view_mode: default
+      view_mode: carousel
       link: false
     third_party_settings: {  }
-    weight: 102
+    weight: 0
     region: content
   links:
     settings: {  }

@@ -9,11 +9,9 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - field.field.node.article.field_tipo_de_hotel
-    - image.style.wide
     - node.type.article
   module:
     - comment
-    - image
     - text
     - user
 _core:
@@ -28,7 +26,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   comment:
     type: comment_default
@@ -37,18 +35,16 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 110
+    weight: 4
     region: content
   field_image:
-    type: image
-    label: hidden
+    type: entity_reference_entity_view
+    label: visually_hidden
     settings:
-      image_link: ''
-      image_style: wide
-      image_loading:
-        attribute: eager
+      view_mode: carousel
+      link: false
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_tags:
     type: entity_reference_label
@@ -56,7 +52,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 2
     region: content
   field_tipo_de_hotel:
     type: entity_reference_label
@@ -64,12 +60,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 111
+    weight: 5
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
   langcode: true

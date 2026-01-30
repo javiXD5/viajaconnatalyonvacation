@@ -27,7 +27,7 @@ widgets:
     settings:
       submit_text: 'Seleccionar los archivos'
       upload_location: 'public://'
-      multiple: true
+      multiple: false
       extensions: 'jpg jpeg png gif webp'
       media_type: image
   3e6a09d9-8ff6-4268-805f-81756042b10b:
