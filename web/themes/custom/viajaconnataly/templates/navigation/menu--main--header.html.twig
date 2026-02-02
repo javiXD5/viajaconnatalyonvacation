@@ -1,0 +1,67 @@
+<nav class="main-nav container-fluid">
+  <div class="row align-items-center py-3">
+
+    {# LOGO #}
+    <div class="col-8 col-md-3">
+      <a href="/" class="navbar-brand">
+        <img src="/{{ directory }}/images/Logo-OV-Color.webp"
+             alt="Viaja con Nataly"
+             class="img-fluid">
+      </a>
+    </div>
+
+    {# HAMBURGUESA (solo mobile) #}
+    <div class="col-4 d-md-none text-end">
+      <button class="menu-toggle"
+              aria-label="Abrir menú"
+              aria-expanded="false"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainMenu">
+        ☰
+      </button>
+    </div>
+
+    {# MENU #}
+    <div class="col-12 col-md-9">
+      <div class="collapse d-md-block" id="mainMenu">
+        <ul class="nav flex-column flex-md-row justify-content-md-end">
+
+          {% for item in items %}
+
+            {% if item.below %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle {{ item.in_active_trail ? 'active' : '' }}"
+                   href="{{ item.url }}"
+                   data-bs-toggle="dropdown">
+                  {{ item.title }}
+                </a>
+
+                <ul class="dropdown-menu">
+                  {% for child in item.below %}
+                    <li>
+                      <a class="dropdown-item {{ child.in_active_trail ? 'active' : '' }}"
+                         href="{{ child.url }}">
+                        {{ child.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link {{ item.in_active_trail ? 'active' : '' }}"
+                   href="{{ item.url }}">
+                  {{ item.title }}
+                </a>
+              </li>
+            {% endif %}
+
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>

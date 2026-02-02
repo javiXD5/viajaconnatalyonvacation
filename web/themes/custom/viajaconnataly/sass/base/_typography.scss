@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $color-text;
+  background: $color-bg;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}

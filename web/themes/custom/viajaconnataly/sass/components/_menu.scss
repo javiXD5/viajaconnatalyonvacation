@@ -1,0 +1,40 @@
+@use '../base/variables' as *;
+
+.main-nav {
+  border-bottom: 2px solid $color-primary;
+  background: $color-light;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: $color-primary;
+}
+
+/* Mobile */
+.main-nav .nav {
+  margin-top: 1rem;
+
+  .nav-link {
+    padding: 0.75rem 0;
+    font-weight: 500;
+    color: $color-dark;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav .nav {
+    margin-top: 0;
+
+    .nav-link {
+      padding: 0.5rem 1rem;
+    }
+  }
+}
