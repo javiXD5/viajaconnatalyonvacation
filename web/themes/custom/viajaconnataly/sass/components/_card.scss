@@ -1,0 +1,30 @@
+@use '../base/variables' as *;
+.card{
+    img{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+    }
+    .card-title{
+        a{
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+    .card-text {
+        line-height: 1.5;
+        min-height: calc(1.5em * 5);
+        max-height: calc(1.5em * 5);
+        overflow: hidden;
+        position: relative;
+        display: block;
+        word-break: break-word;
+        padding-right: 0.25rem;
+    }
+    .card-link{
+        margin: 0;
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: $color-light;
+    }
+}

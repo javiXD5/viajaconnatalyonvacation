@@ -1,4 +1,29 @@
 @charset "UTF-8";
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card .card-title a {
+  text-decoration: none;
+  color: #dd183b;
+}
+.card .card-text {
+  line-height: 1.5;
+  min-height: 7.5em;
+  max-height: 7.5em;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  word-break: break-word;
+  padding-right: 0.25rem;
+}
+.card .card-link {
+  margin: 0;
+  background-color: #dd183b;
+  border-color: #dd183b;
+  color: #ffffff;
+}
+
 .main-nav {
   border-bottom: 2px solid #dd183b;
   background: #ffffff;
@@ -41,7 +66,8 @@
 
 @media (min-width: 768px) {
   .navbar-logo img {
-    max-height: 100px;
+    min-height: 100px;
+    max-height: 120px;
   }
 }
 .view-promociones-home {
