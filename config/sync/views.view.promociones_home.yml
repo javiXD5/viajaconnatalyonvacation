@@ -91,8 +91,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<a href="{{ view_node }} "{{ field_image_1 }} </a>'
             make_link: false
             path: ''
             absolute: false
@@ -147,10 +147,9 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -236,18 +235,16 @@ display:
           query_tags: {  }
       relationships: {  }
       header:
-        area:
-          id: area
+        area_text_custom:
+          id: area_text_custom
           table: views
-          field: area
+          field: area_text_custom
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: text
+          plugin_id: text_custom
           empty: false
-          content:
-            value: '<h3> Las mejores promos que puedes aprovechar <h3>'
-            format: basic_html
+          content: '<h2 class="text-align-center"> Las mejores promos que puedes aprovechar </h2>'
           tokenize: false
       footer: {  }
       display_extenders: {  }
@@ -260,12 +257,13 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image'
-  block_1:
-    id: block_1
-    display_title: Block
+  promociones_home:
+    id: promociones_home
+    display_title: 'Promociones home'
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
