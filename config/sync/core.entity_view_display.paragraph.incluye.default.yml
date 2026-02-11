@@ -1,0 +1,31 @@
+uuid: e15d2b6f-360e-4cc3-9273-7b91b62aa132
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.incluye.field_descripcion
+    - field.field.paragraph.incluye.field_tipo
+    - paragraphs.paragraphs_type.incluye
+  module:
+    - options
+id: paragraph.incluye.default
+targetEntityType: paragraph
+bundle: incluye
+mode: default
+content:
+  field_descripcion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tipo:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

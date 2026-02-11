@@ -1,0 +1,31 @@
+uuid: d25b45f8-199c-4aa8-8234-dd2c9aa08c60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_incluye
+    - node.type.promocion
+    - paragraphs.paragraphs_type.incluye
+  module:
+    - entity_reference_revisions
+id: node.promocion.field_incluye
+field_name: field_incluye
+entity_type: node
+bundle: promocion
+label: Incluye
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      incluye: incluye
+    negate: 0
+    target_bundles_drag_drop:
+      incluye:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

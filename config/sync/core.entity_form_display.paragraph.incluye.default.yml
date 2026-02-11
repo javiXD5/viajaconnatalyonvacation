@@ -1,0 +1,30 @@
+uuid: da85348f-c8cb-477d-b573-d6aadc7505d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.incluye.field_descripcion
+    - field.field.paragraph.incluye.field_tipo
+    - paragraphs.paragraphs_type.incluye
+id: paragraph.incluye.default
+targetEntityType: paragraph
+bundle: incluye
+mode: default
+content:
+  field_descripcion:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipo:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

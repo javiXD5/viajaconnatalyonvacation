@@ -1,0 +1,21 @@
+uuid: f511322d-8d4e-48d0-920f-93587e0c6598
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tipo
+    - paragraphs.paragraphs_type.incluye
+  module:
+    - options
+id: paragraph.incluye.field_tipo
+field_name: field_tipo
+entity_type: paragraph
+bundle: incluye
+label: Tipo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

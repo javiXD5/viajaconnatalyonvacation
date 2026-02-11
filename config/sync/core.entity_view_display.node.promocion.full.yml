@@ -6,8 +6,10 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.promocion.body
     - field.field.node.promocion.field_image
+    - field.field.node.promocion.field_incluye
     - node.type.promocion
   module:
+    - entity_reference_revisions
     - layout_builder
     - text
     - user
@@ -25,7 +27,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -33,6 +35,15 @@ content:
     settings:
       view_mode: carousel
       link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_incluye:
+    type: entity_reference_revisions_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 0
     region: content

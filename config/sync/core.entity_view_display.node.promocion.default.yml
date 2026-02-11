@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.node.promocion.body
     - field.field.node.promocion.field_image
+    - field.field.node.promocion.field_incluye
     - node.type.promocion
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.promocion.default
@@ -29,6 +31,15 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_incluye:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

@@ -389,7 +389,7 @@ display:
           row_class: py-3
           default_row_class: true
           grid_class: ''
-          col_xs: col-1
+          col_xs: col-12
           col_sm: none
           col_md: col-md-6
           col_lg: none
