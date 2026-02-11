@@ -1,12 +1,15 @@
 <article{{ attributes.addClass('promocion') }}>
   
-  <h1 class="text-align-center">{{ label }}</h1>
+  
   {% if content.field_image %}
     <div class="promocion-image ">
       {{ content.field_image }}
     </div>
   {% endif %}
-
+  <h1 class="text-align-center">{{ label }}</h1>
+  {% if content.field_incluye %}
+    {{content.field_incluye}}
+  {% endif %}
   <div class="promocion-body">
     {{ content.body }}
   </div>
