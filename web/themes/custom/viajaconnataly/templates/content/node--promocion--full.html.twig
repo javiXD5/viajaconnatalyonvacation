@@ -1,15 +1,27 @@
-<article{{ attributes.addClass('promocion') }}>
+<article{{ attributes.addClass('promo') }}>
   
   
   {% if content.field_image %}
-    <div class="promocion-image ">
+    <div class="prom-image ">
       {{ content.field_image }}
     </div>
   {% endif %}
-  <h1 class="text-align-center">{{ label }}</h1>
-  {% if content.field_incluye %}
-    {{content.field_incluye}}
-  {% endif %}
+
+  <div class="container-fluid my-4 promo-header">
+    <div class="row">
+        <div class="col-md-6 promo-header-title my-5 my-md-0">
+          <h1 class="text-align-center">{{ label }}</h1>
+        </div>
+        <div class="col-md-6 promo-header-icons">
+          {% if content.field_incluye %}
+            {{content.field_incluye}}
+          {% endif %}
+        </div>
+    </div>
+  </div>
+
+
+
   <div class="promocion-body">
     {{ content.body }}
   </div>
