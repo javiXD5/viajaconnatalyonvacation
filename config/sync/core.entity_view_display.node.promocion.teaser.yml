@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.promocion.body
+    - field.field.node.promocion.field_hotel_de_la_promo
     - field.field.node.promocion.field_image
     - field.field.node.promocion.field_incluye
     - node.type.promocion
@@ -30,6 +31,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_hotel_de_la_promo: true
   field_image: true
   field_incluye: true
   langcode: true

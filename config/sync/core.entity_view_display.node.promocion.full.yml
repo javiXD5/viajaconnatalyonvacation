@@ -5,12 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.promocion.body
+    - field.field.node.promocion.field_hotel_de_la_promo
     - field.field.node.promocion.field_image
     - field.field.node.promocion.field_incluye
     - node.type.promocion
   module:
     - entity_reference_revisions
     - layout_builder
+    - options
     - text
     - user
 third_party_settings:
@@ -28,6 +30,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_hotel_de_la_promo:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_image:
     type: entity_reference_entity_view

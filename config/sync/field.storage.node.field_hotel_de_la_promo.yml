@@ -1,0 +1,39 @@
+uuid: c71cad07-92a5-49bc-964b-95a9d4d0cf35
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_hotel_de_la_promo
+field_name: field_hotel_de_la_promo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: guajira
+      label: Guajira
+    -
+      value: amazonas
+      label: Amazonas
+    -
+      value: santa_marta
+      label: 'Santa marta'
+    -
+      value: san_andres
+      label: 'San andres'
+    -
+      value: girardot
+      label: Girardot
+    -
+      value: otro
+      label: Otro
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
