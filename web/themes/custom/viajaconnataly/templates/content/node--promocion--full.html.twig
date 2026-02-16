@@ -1,35 +1,57 @@
 <article{{ attributes.addClass('promo') }}>
   
   
+
+  {% set hotel = node.field_hotel_de_la_promo.value %}
+  {% if hotel == 'guajira' %}
+    {% set image_title = '/sites/default/files/guajira_07.jpg' %}
+  {% elseif hotel == 'girardot' %}
+    {% set image_title = '/sites/default/files/ON-VACATION---HOTEL-GIRARDOT--CABANAS-3.jpg' %}
+  {% elseif hotel == 'amazonas' %}
+    {% set image_title = '/sites/default/files/AMAZON_1024x512_2.webp' %}
+  {% elseif hotel == 'san_andres' %}
+    {% set image_title = '/sites/default/files/COVE_1024x512_4.webp' %}
+  {% elseif hotel == 'santa_marta' %}
+    {% set image_title = '/sites/default/files/on-vacation-santa-marta-mendihuaca-1024x512px-11.jpg' %}
+  {% else %}
+    {% set image_title = '/sites/default/files/2026-02/hoteles-otro.jpg' %}
+  {% endif %}
+
+
   {% if content.field_image %}
-    <div class="prom-image ">
+    <div class="prom-image mt-5">
       {{ content.field_image }}
     </div>
   {% endif %}
 
   <div class="container-fluid my-4 promo-header">
     <div class="row">
-        <div class="col-md-6 promo-header-title my-5 my-md-0">
-          <h1 class="text-align-center">{{ label }}</h1>
+
+      <div class="col-md-5 promo-header-title my-5 my-md-0">
+          <img src="{{ image_title }}" />
+        <div class="overlay-title">
+          <h1 class="text-center text-white">{{ label }}</h1>
         </div>
-        <div class="col-md-6 promo-header-icons">
-          {% if content.field_incluye %}
-            {{content.field_incluye}}
-          {% endif %}
+
+      </div>
+
+      <div class="col-md-7 promo-header-icons">
+        {% if content.field_incluye %}
+          {{ content.field_incluye }}
+        {% endif %}
+      </div>
+      <div class="col-md-8 offset-md-2 text-align-center my-5" >
+        <div class=" promocion-body"> 
+          {{ content.body }} 
+        </div> 
+        
+        <div class="promocion-cta"> 
+          <a href="https://wa.me/573123170535" class="btn btn-success"> Reservar por WhatsApp </a> 
         </div>
+      </div>
+
     </div>
   </div>
 
-
-
-  <div class="promocion-body">
-    {{ content.body }}
-  </div>
-
-  <div class="promocion-cta">
-    <a href="https://wa.me/573123170535" class="btn btn-success">
-      Reservar por WhatsApp
-    </a>
-  </div>
 
 </article>

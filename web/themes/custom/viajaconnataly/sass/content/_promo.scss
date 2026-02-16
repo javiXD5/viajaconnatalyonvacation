@@ -3,22 +3,34 @@
 .promo{
     &-header{
         &-title{
-            background-color: $color-primary;
             position: relative;
-            min-height: 300px;
-            h1{
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .overlay-title {
+                background: rgba(0,0,0,0.4);
+                padding: 20px 40px;
+                width: 100%;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: $color-light;
+                top: 45%;
             }
         }
+
         &-icons{
+            position: relative;
             .card{
                 border-color: $color-primary;
                 &-body{
                     text-align: center;
+                }
+                .icon{
+                    width: 25%;
+                    margin: auto;
                 }
             }
         }
