@@ -1,0 +1,27 @@
+uuid: 4838475a-7197-4fa1-a369-8a2b4f51200f
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_orientacion
+field_name: field_orientacion
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: galeria_izquierda
+      label: 'Galeria Izquierda'
+    -
+      value: galeria_derecha
+      label: 'Galeria Derecha'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

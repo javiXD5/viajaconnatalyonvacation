@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_galeria
     - field.field.node.article.field_hotel_de_la_promo
     - field.field.node.article.field_image
     - field.field.node.article.field_incluye
@@ -40,6 +41,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_galeria:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_hotel_de_la_promo:
     type: list_default

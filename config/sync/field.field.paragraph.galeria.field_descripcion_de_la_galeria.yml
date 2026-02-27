@@ -1,0 +1,24 @@
+uuid: f8e04821-0bec-4ecd-ab81-64d6fc7eb11e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_descripcion_de_la_galeria
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.galeria
+  module:
+    - text
+id: paragraph.galeria.field_descripcion_de_la_galeria
+field_name: field_descripcion_de_la_galeria
+entity_type: paragraph
+bundle: galeria
+label: 'Descripcion de la Galeria'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

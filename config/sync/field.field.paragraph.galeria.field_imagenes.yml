@@ -1,0 +1,29 @@
+uuid: bee871c4-2c81-4e1f-b370-5a3c7aaa97fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagenes
+    - media.type.image
+    - paragraphs.paragraphs_type.galeria
+id: paragraph.galeria.field_imagenes
+field_name: field_imagenes
+entity_type: paragraph
+bundle: galeria
+label: Imagenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: fdc80243-51a4-4176-8ded-2385435415e6
+langcode: es
+status: true
+dependencies: {  }
+id: galeria
+label: Galeria
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

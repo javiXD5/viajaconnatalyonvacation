@@ -6,6 +6,7 @@ dependencies:
     - entity_browser.browser.imagen
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_galeria
     - field.field.node.article.field_hotel_de_la_promo
     - field.field.node.article.field_image
     - field.field.node.article.field_incluye
@@ -26,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 9
@@ -36,9 +37,27 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 9
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_galeria:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_hotel_de_la_promo:
     type: options_select
@@ -48,7 +67,7 @@ content:
     third_party_settings: {  }
   field_image:
     type: entity_browser_entity_reference
-    weight: 1
+    weight: 2
     region: content
     settings:
       entity_browser: imagen
@@ -63,7 +82,7 @@ content:
     third_party_settings: {  }
   field_incluye:
     type: paragraphs
-    weight: 3
+    weight: 4
     region: content
     settings:
       title: Párrafo
@@ -81,7 +100,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 4
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -91,30 +110,30 @@ content:
     third_party_settings: {  }
   field_tipo_de_hotel:
     type: options_select
-    weight: 3
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp
-    weight: 10
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 9
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 5
+    weight: 8
     region: content
     settings:
       display_label: true
@@ -129,7 +148,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -139,12 +158,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp
-    weight: 11
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 12
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }

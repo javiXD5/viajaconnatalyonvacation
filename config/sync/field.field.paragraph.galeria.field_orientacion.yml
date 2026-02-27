@@ -1,0 +1,21 @@
+uuid: 815242d8-b9de-44de-83e2-168a846c0589
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_orientacion
+    - paragraphs.paragraphs_type.galeria
+  module:
+    - options
+id: paragraph.galeria.field_orientacion
+field_name: field_orientacion
+entity_type: paragraph
+bundle: galeria
+label: Orientacion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
