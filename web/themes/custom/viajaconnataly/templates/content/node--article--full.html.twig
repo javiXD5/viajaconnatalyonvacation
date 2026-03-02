@@ -26,7 +26,9 @@
 
   <div class="container-fluid my-4 promo-header">
     <div class="row">
-
+      <div class=" promocion-body col-md-8 offset-md-2 text-align-center"> 
+          {{ content.body }} 
+      </div>
       <div class="col-md-5 promo-header-title my-5 my-md-0">
           <img src="{{ image_title }}" />
         <div class="overlay-title">
@@ -41,12 +43,12 @@
         {% endif %}
       </div>
       <div class="col-md-8 offset-md-2 text-align-center my-5" >
-        <div class=" promocion-body"> 
-          {{ content.body }} 
-        </div> 
+
         
         <div class=" promocion-galeria my-5"> 
-          {{ content.field_galeria}} 
+          {% if content.field_galeria %}
+            {{ content.field_galeria}} 
+          {% endif %}
         </div> 
         <div class="promocion-cta"> 
           <a href="https://wa.me/573123170535" class="btn btn-success"> Reservar por WhatsApp </a> 
