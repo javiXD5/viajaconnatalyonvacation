@@ -1,0 +1,15 @@
+uuid: dc65cc27-9b20-4050-b70e-7ef95e59c992
+langcode: es
+status: true
+dependencies: {  }
+name: 550_x_250
+label: '550 x 250'
+effects:
+  0e835dbc-3b3e-450c-b116-77342fa07067:
+    uuid: 0e835dbc-3b3e-450c-b116-77342fa07067
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 550
+      height: 250
+      anchor: center-center

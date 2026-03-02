@@ -1,0 +1,11 @@
+uuid: 1b3d164b-3a8d-4b73-a9f9-c9d9b217e1bd
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.carousel_interna
+label: 'Carousel interna'
+description: ''
+targetEntityType: media
+cache: true
